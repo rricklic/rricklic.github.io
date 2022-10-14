@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor - Interactive Rating</title>
+  <link rel="stylesheet" type="text/css" href="../css/interactive_rating.css">
+</head>
+<body>
+  <main>
+    <!-- Rating component -->
+    <div class="rating-container">
+      <div class="round">
+        <img src="../img/icon-star.svg" class="icon" alt="">
+      </div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="buttons">
+        <!-- TODO: use radio buttons!!! -->
+        <button class="round">1</button>
+        <button class="round">2</button>
+        <button class="round">3</button>
+        <button class="round">4</button>
+        <button class="round">5</button>
+      </div>
+      <button class="submit-button">SUBMIT</button>
+    </div>
+    <!-- Thank you component -->
+    <div class="hidden thanks-box rating-container">
+      <img src="../img/illustration-thank-you.svg" alt="">
+      <p class="pill"></p> <!-- TODO: use a <span id="selected_rating"></span> to set rating-->
+      <div class="thanks"> 
+        <h1 class="thanks-heading">Thank you!</h1>
+        <p class="thanks-text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+    </div>
+  </main>
+  <script src="../js/interactive_rating.js"></script>
+</body>
+</html>

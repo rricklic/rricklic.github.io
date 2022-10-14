@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations</title>
+  <link rel="stylesheet" type="text/css" href="/css/animation.css">
+  <!-- https://www.youtube.com/watch?v=zHUpx90NerM&t=729s -->
+</head>
+<body>
+  <header id="showcase">
+    <h1>Welcome to the animation test page</h1>
+  </header>
+  <div class="containter" id="content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolorem cupiditate voluptas necessitatibus voluptate illum ullam aliquam cum, odio nesciunt eum exercitationem voluptatum, corrupti quam tempore maiores ducimus labore sapiente?
+  </div>
+  <a href="#" class="btn">See More</a>
+  <div class="box"></div>
+  <div class="box2"></div>
+
+  <!--
+  <script src="js/easing.js"></script>
+
+  <script>
+    let startTime;
+
+    function animateTitle()
+    {
+        const box = document.getElementById("box");
+
+        const time = Date.now();
+        if (startTime === undefined) {
+            startTime = time;
+        }
+
+        /*
+        if ((time - startTime) < 2000) {
+            h1.style.opacity = easingLinear(
+                time - startTime,
+                0,
+                1,
+                2000);
+        } else {
+            h1.style.opacity = 100;
+        }
+        */
+        
+        /*
+        if ((time - startTime) < 1000) {
+            h1.style.transform = "translateY(" + easingLinear(
+                time - startTime,
+                100,
+                0,
+                1000) + "px)";
+        } else {
+            h1.style.transform = "translateY(" + 0 + "px)";
+        }
+        */
+
+
+        let transform = "";
+
+        /*
+        if ((time - startTime) < 4000) {
+            degree =  + easingLinear(
+                time - startTime,
+                0,
+                360,
+                4000);
+            transform = `rotateX(${degree}deg) `;
+        } else {
+            transform = "rotateX(0deg)";
+        }
+        
+        if ((time - startTime) < 4000) {
+            degree =  + easingLinear(
+                time - startTime,
+                0,
+                360,
+                4000);
+            transform += `rotateY(${degree}deg) `;
+        } else {
+            transform += "rotateY(0deg)";
+        }
+        
+        if ((time - startTime) < 4000) {
+            degree =  + easingLinear(
+                time - startTime,
+                0,
+                360,
+                4000);
+            transform += `rotateZ(${degree}deg) `;
+        } else {
+            transform += "rotateZ(0deg)";
+        }
+        */           
+
+        /*
+        if ((time - startTime) < 2000) {
+            const scale = easingLinear(
+                time - startTime,
+                0,
+                1,
+                2000);
+
+            transform += `scale(${scale}, ${scale})`;
+        } else {
+            transform += "scale(1, 1)";
+        }
+        */
+                    
+        box.style.transform = transform;
+
+
+        window.requestAnimationFrame(animateTitle);
+
+    }
+    animateTitle();
+  </script>
+  -->
+</body>
+</html>

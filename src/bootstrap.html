@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="/icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <!-- https://www.youtube.com/watch?v=4sosXZsdy-s -->
+  </head>
+  <body>
+
+    <!-- Top navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Ryan K. Ricklic</a>
+        <!-- "Hamburger" menu button to toggle displaying menu items " -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu items -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Hello, <span class="text-warning">World</span>!</h1>
+            <p class="lead my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Modi quas repellat perspiciatis repellendus non magni deleniti voluptas minus.
+              Adipisci possimus hic aspernatur provident magni velit ullam numquam illum reprehenderit asperiores?
+            </p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enroll">Contact Me</button>
+          </div>
+          <img src="/img/programmer.svg" class="img-fluid w-25 d-none d-sm-block" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Input Form -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter email">
+            <button class="btn btn-dark btn-lg" type="button">Button</button>
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <!-- Tiles -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Projects</h3>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ab vitae id est fuga aspernatur.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">About</h3>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ab vitae id est fuga aspernatur.</p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-newspaper"></i>
+                </div>
+                <h3 class="card-title mb-3">Blog</h3>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ab vitae id est fuga aspernatur.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="/img/programmer.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md p-5">
+            <h2>Ryan K Ricklic</h2>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sint minima reprehenderit velit maxime recusandae quo. Nihil totam nam suscipit.</p>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos esse incidunt, itaque quia ratione praesentium delectus voluptates. Nesciunt ipsum a qui rem. Nihil necessitatibus fugiat officiis nulla rerum quos inventore.</p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Blog</h2>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sint minima reprehenderit velit maxime recusandae quo. Nihil totam nam suscipit.</p>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos esse incidunt, itaque quia ratione praesentium delectus voluptates. Nesciunt ipsum a qui rem. Nihil necessitatibus fugiat officiis nulla rerum quos inventore.</p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read more
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="/img/programmer.svg" class="img-fluid" alt="">
+          </div>          
+        </div>
+      </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section id="faq" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="faq">
+          <!-- Question 1-->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-1">
+                Question 1?
+              </button>
+            </h2>
+            <div id="question-1" class="accordion-collapse collapse" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, laudantium!</div>
+            </div>
+          </div>
+          <!-- Question 2-->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-2">
+                Question 2?
+              </button>
+            </h2>
+            <div id="question-2" class="accordion-collapse collapse" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, facilis qui sunt omnis dicta veniam? Libero nulla tempora, alias facilis doloremque accusantium modi ut obcaecati vel dolor? Impedit, illum dolorem.</div>
+            </div>
+          </div>
+          <!-- Question 3-->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-3">
+                Question 3?
+              </button>
+            </h2>
+            <div id="question-3" class="accordion-collapse collapse" data-bs-parent="#faq">
+              <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quisquam consectetur magni tenetur tempora dignissimos.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- People -->
+    <section id="people" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-light">People</h2>
+        <p class="lead text-center text-white mb-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis saepe unde non modi possimus veniam, voluptatum exercitationem quod adipisci facere.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="/img/programmer.svg" class="rounded-circle mb-3" alt="">
+                <h3 class="card-title mb-3">Person 1</h3>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore modi earum, architecto impedit voluptates.</p>
+                <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="/img/programmer.svg" class="rounded-circle mb-3" alt="">
+                <h3 class="card-title mb-3">Person 2</h3>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore modi earum, architecto impedit voluptates.</p>
+                <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="/img/programmer.svg" class="rounded-circle mb-3" alt="">
+                <h3 class="card-title mb-3">Person 3</h3>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore modi earum, architecto impedit voluptates.</p>
+                <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="/img/programmer.svg" class="rounded-circle mb-3" alt="">
+                <h3 class="card-title mb-3">Person 4</h3>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore modi earum, architecto impedit voluptates.</p>
+                <a href="#"><i class="bi bi-github text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-youtube text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-5">
+      <div class="container">
+        <div class="row g-4"></div>
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Location: </span> 1313 Mockingbird Lane
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone: </span> (123) 456-7890
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email: </span> ryankricklic@gmail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Website: </span> https:www.ricklic.com
+              </li>                                          
+            </ul>
+          </div>
+          <!-- TODO: Mapbox -->
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2022 Ryan K. Ricklic</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enrollLabel">Contact Me</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out form and I'll get back to you.</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">First Name:</label>
+                <input type="text" class="form-control" id="first-name">
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

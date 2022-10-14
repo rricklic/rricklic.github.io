@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* TODO: 'Poppins' */
+}
+
+.flex-container {
+    height: 500px;
+    background-color: #cccccc;
+
+    /* Flex properties*/ 
+    display: flex; /* Enable flexbox property */
+    flex-direction: row; /* Sets direction of the flow: row, row-reverse, column, column-reverse */
+    justify-content: start; /* Pertains to main axis (row=horizontal, column=vertical): start, end, center, space-around, space-between */
+    align-items: start; /* Pertains to cross axis (opposite of main): start, end, center, space-around, space-between */
+    flex-wrap: wrap; /* Wrap items if cannot hold */
+}
+
+.flex-item {
+    height: 100px;
+    background: #254de4;
+    color: white;
+    margin: 10px;
+
+    /* Flex properties */
+    display: flex; /* Define item as a flexbox; flexboxes can be nested */
+    justify-content: center;
+    align-items: center;
+    /* width: 100px; */
+    /* flex-basis: 400px; */ /* Starting size */
+    /* flex-grow: 1; */ /* Grow rate */
+    /* flex-shrink: 1; */ /* Shrink rate */
+    flex: 1 0 100px; /* grow, shrink, basis */
+}
+
+.flex-item:nth-of-type(1) { /* nth-of-type is a pseudo selector */
+    /*align-self: start;*/ /* Set alignment of individual flex-item */
+    order: 2; /* Order the items in flex container; can be positive, zero, or negative */
+    flex-grow: 1; /* Grow rate */
+}
+
+
+.flex-item:nth-of-type(2) {
+    /* align-self: center; */
+    order:1;
+    flex-grow: 2;
+}
+
+.flex-item:nth-of-type(3) {
+    /* align-self: end; */
+    order:3;
+    flex-grow: 1;
+}

@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box; /* border and padding is included in width/height */
+    padding: 0; /* Zero out padding if any defined by default */
+    margin: 0; /* Zero out margin if any defined by default */
+}
+
+.container {
+    max-width: 1100px; /* Limit width of containers so that there's space on both side of content on large screens*/
+    margin: 0 auto; /* top/bottom left/right; auto - centers horizontally within container */
+    overflow: auto; /* add scrollbar only when needed */
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-room {
+    background-color: red;
+    height: 500px;
+}
+
+.tv {
+    position: relative;
+    max-width: 512px;
+    max-width: 480px;
+    margin-bottom: 10%;
+}
+
+.tv-frame {
+    width: 100%;
+    z-index: 2;
+}
+
+.tv-screen {
+    position: absolute;
+    background-color: #000000;
+    width: 62%;
+    height: 63%;
+    z-index: 1;
+    transform: translateX(-14%) translateY(-8%);
+}
+
+.tv-power {
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    transform: translateX(242%) translateY(37%);
+    z-index: 3;
+}
+
+.tv-shadow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 10%);
+    width: 100%;
+    height: 10%;
+    transform: translateX(0%) translateY(385%);
+    border-radius: 50%;
+    z-index: 1;
+}
